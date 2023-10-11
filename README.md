@@ -1,4 +1,4 @@
-# Matrix-Calculator
+# Calculators-Python
 Matrix Calculator (Python)
 
 Interface not yet made.
