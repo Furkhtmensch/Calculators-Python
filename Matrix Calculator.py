@@ -7,6 +7,10 @@ class Matrix:
         self.columns = INFO[3]
     def getMatrixInfo(self):
         return [self.n, self.m, self.lines, self.columns]
+    def printMatrix(self):
+        for i in range(self.n):
+            print(" ".join(self.lines[i]))
+
 
 def dotProduct(SEQ1 = [], SEQ2 = []):
     SUM = 0
@@ -53,6 +57,7 @@ def getMatrixInfoFromUser():
             LINES[i][j] = INPUT_LIST[j]
     COLUMNS = getTransposeMatrix(N, M, LINES)
     return [N, M, LINES, COLUMNS]
+
 
 '''
 
