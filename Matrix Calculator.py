@@ -1,4 +1,3 @@
-
 class Matrix:
     def __init__(self, INFO):
         self.n = INFO[0]
@@ -8,8 +7,9 @@ class Matrix:
     def getMatrixInfo(self):
         return [self.n, self.m, self.lines, self.columns]
     def printMatrix(self):
+        print()
         for i in range(self.n):
-            print(" ".join(self.lines[i]))
+            print(" ".join(str(self.lines[i][j]) for j in range(self.m)))
 
 
 def dotProduct(SEQ1 = [], SEQ2 = []):
@@ -58,6 +58,12 @@ def getMatrixInfoFromUser():
     COLUMNS = getTransposeMatrix(N, M, LINES)
     return [N, M, LINES, COLUMNS]
 
+'''
+
+D = Matrix(getMatrixInfoFromUser())
+D.printMatrix()
+
+'''
 
 '''
 
